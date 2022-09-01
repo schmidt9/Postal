@@ -30,5 +30,4 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'Result'
-  s.libraries = "etpan", "sasl2", "z", "iconv"
 end
