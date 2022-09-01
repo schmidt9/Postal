@@ -30,5 +30,5 @@ Pod::Spec.new do |s|
   }
 
   s.dependency 'Result'
-  s.dependency 'libetpan', '1.3.pre2'
+  s.dependency 'libetpan'
 end
