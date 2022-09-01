@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
 
-  s.source = { :git => 'https://github.com/snipsco/Postal.git', :tag => 'v' + s.version.to_s }
+  s.source = { :git => 'https://github.com/schmidt9/Postal.git', :tag => 'v' + s.version.to_s }
   s.source_files  = 'Postal/*.{swift,h}'
   s.preserve_paths = 'dependencies'
 
@@ -28,4 +28,6 @@ Pod::Spec.new do |s|
     'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Postal/dependencies/build/macos/lib"',
     'HEADER_SEARCH_PATHS' => '"$(SRCROOT)/Postal/dependencies/build/macos/include"'
   }
+
+  s.dependency 'Result'
 end
